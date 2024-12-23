@@ -1,0 +1,83 @@
+:root {
+  color-scheme: light dark;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --background-color: #f9fafb;
+    --foreground-color: black;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background-color: #172136;
+    --foreground-color: white;
+  }
+}
+
+body {
+  margin: 0;
+  padding: 0.5rem;
+  background-color: var(--background-color);
+  color: var(--foreground-color);
+  font-family: "IBM Plex Sans", sans-serif;
+  font-size: 18px;
+  line-height: 1.4;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+header img {
+  width: 128px;
+  border-radius: 100%;
+}
+
+main {
+  overflow-wrap: anywhere;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Galdeano", sans-serif;
+  font-weight: normal;
+  letter-spacing: 0.11em;
+  text-transform: uppercase;
+  margin-block-start: 3.5rem;
+}
+
+h1 {
+  font-size: 1.5rem;
+}
+
+h2 {
+  font-size: 1.3rem;
+}
+
+p {
+  margin-block: 1.75rem;
+}
+
+a {
+  color: inherit;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td {
+  padding: 0.8rem;
+}
+
+td:first-child {
+  text-transform: lowercase;
+  padding-inline-start: 0;
+}
